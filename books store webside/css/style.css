@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+
+#navbar{
+     position: sticky;
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+    
+}
+
+/* Navigation Bar: logo and img  */
+#logo{
+    margin: 1rem 20rem;
+}
+
+#logo img{
+    margin: -1rem -16rem;
+    height: 48px;
+    /* border: 0.4px solid red; */
+    /* border-radius: 50%; */
+    /* background-color: aquamarine; */
+}
+
+/* Navigation Bar: list Styling  */
+
+#navbar ul{
+    display: flex; 
+    padding: 1px  50px;
+}
+
+#navbar::before{
+    content: '';
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+#navbar ul li a{
+ display: block;
+ text-decoration: none;
+ padding: 2px 30px;      
+ border-radius: 20px;
+ color: black;
+ font-weight: bolder; 
+}
+
+#navbar ul li a:hover{
+    color:white;
+    background-color: black;
+}
+
+/* Home Styling */
+#home{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 340px;
+    color: black;
+    
+}
+
+#home::before{
+    content: '';
+    background: url(./book8.jpg) no-repeat center center/cover;
+    background-color: rgb(197, 241, 241);
+    position: absolute;
+    height: 65%;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8;
+    /* margin-bottom: 0px; */
+    
+}
+
+h1{
+    text-align: center;
+  
+    font-weight: bold;  
+}
+
+#home p{
+    text-align: center;
+    padding: 3px 0px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: red;
+}
+
+
+/* Services section */
+
+#services{
+    display: flex;    
+}
+#services .box{
+    border: 2px solid red;
+    padding: 0px 20px;
+    margin: 30px 30px;
+    border-radius: 20px;
+    background-color: #e3dce6;
+}
+#services .box img{
+ height: 200px;
+ margin: auto;
+ display: block;
+
+}
+#services .btn p{
+    font-family: 'Josefin Sans', sans-serif; 
+}
+
+
+/* Client Section */
+#client-section{
+    /* height: 400px; */
+    position: relative;
+    
+}
+
+#client-section::before{
+    content: ' ';
+    position: absolute;
+    background: url(./service.png) no-repeat center center/cover;
+    width: 100%;
+    height: 95%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 40px;
+}
+
+#clients img{
+    height: 130px;
+}
+
+/* Contact Section */
+#contact{
+position: relative;    
+}   
+
+#contact::before{
+    content: '';
+    width: 100%;
+    height: 130%;
+    position: absolute;
+    background: url(./contact.jpg) no-repeat center center/cover;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 9px;
+    font-size: 0.9rem;
+}
+
+#contact-box form{
+    width: 50%;
+}
+
+#contact-box label{
+    font-size: 1.2rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+    /* margin: 42px 12px; */
+    margin-top: 80px;
+}
+
+/*  Utility classes */
+.h-primary{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    padding: 10px;
+}
+
+.h-secondary{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.1  rem;
+    padding: 20px;
+}
+
+.center{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#btn{
+    background-color: green;
+    margin: 20px;
+    padding: 9px 20px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+
+
