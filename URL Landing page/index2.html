@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike URL Shortlist</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #urlInput {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        #shortenBtn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #shortenedUrl {
+            margin-top: 20px;
+            word-break: break-all;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bike URL Shortlist</h1>
+        <input type="text" id="urlInput" placeholder="Enter your URL">
+        <button onclick="shortenUrl()" id="shortenBtn">Shorten</button>
+        <div id="shortenedUrl"></div>
+    </div>
+
+    <script>
+        function shortenUrl() {
+            var inputElement = document.getElementById('urlInput');
+            var url = inputElement.value;
+
+            // For a static page, we'll simply display the input URL
+            // In a real application, you would make an AJAX request to a server to generate a shortened URL.
+
+            var shortenedUrlElement = document.getElementById('shortenedUrl');
+            shortenedUrlElement.textContent = "Shortened URL: " + url;
+        }
+    </script>
+</body>
+
+</html>
