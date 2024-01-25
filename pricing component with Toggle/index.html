@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Priceing Component with toggle...</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Pricing</h1>
+        <div class="toggle-container">
+            <span>Anually</span>
+            <input type="checkbox" id="toggle" name="toggle" unchecked>
+            <label for="toggle">
+                <div class="ball"></div>
+            </label>
+            <span>Monthly</span>
+        </div>
+        <div class="flex" id="flexy">
+            <div class="price-box">
+                <h4>Basic</h4>
+                <p>
+                    <span class="monthly">
+                        $ 19.99
+                    </span>
+                    <br>
+                    <span class="anually">
+                        $ 120.99
+                    </span>
+                </p>
+                <ul>
+                    <li>500 GB Storage</li>
+                    <li>2 users Allowed</li>
+                    <li>Send Up tp 3 GB</li>
+                </ul>
+                <button>Learn More..</button>
+            </div>
+            <div class="price-box price-box-premium">
+                <h4>Professional</h4>
+                <p>
+                    <span class="monthly">
+                        $ 39.99
+                    </span><br>
+
+                    <span class="anually">
+                        $ 340.99
+                    </span>
+                </p>
+                <ul>
+                    <li>1 TB Storage</li>
+                    <li>4 users Allowed</li>
+                    <li>Send Up tp 10 GB</li>
+                </ul>
+                <button>Learn More..</button>
+            </div>
+            <div class="price-box">
+                <h4>Master</h4>
+                <p>
+                    <span class="monthly">
+                        $ 69.99
+                    </span>
+                    <br>
+                    <span class="anually">
+                        $ 670.99
+                    </span>
+                </p>
+                <ul>
+                    <li>2 TB Storage</li>
+                    <li>10 users Allowed</li>
+                    <li>Send Up tp 20 GB</li>
+                </ul>
+                <button>Learn More..</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

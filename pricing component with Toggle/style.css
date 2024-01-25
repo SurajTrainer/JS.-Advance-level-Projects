@@ -1,0 +1,170 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Manuale:wght@700&display=swap');
+  /* font-family: 'Manuale', serif; */
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 230, 230);
+    color: rgb(45, 45, 76);
+    font-family: 'Manuale', serif;
+    text-align: center;
+    height: 100vh;
+    max-width: 100%;
+    width: 1200px;
+  }
+
+  .container{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding-left: 300px;
+  }
+
+  .flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h1{
+    color: rgb(39, 37, 37);
+  }
+  .toggle-container{
+    color: rgb(68, 65, 59);
+    margin-bottom: 40px;
+  }
+.price-box{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    color: rgb(104, 98, 87);
+    box-shadow: 0 1px 12px 5px rgb(206, 195, 195);
+    margin: 10px;
+}
+
+.price-box h4{
+    margin: 0;
+}
+.price-box p{
+    width: 250px;
+    color: rgb(116, 113, 108);
+    margin: 30px 0;
+    font-size: 3.7em;
+}
+
+.price-box .monthly{
+    display: none;
+}
+
+.show-monthly .price-box .monthly{
+    display: block;
+}
+.show-monthly .price-box .anually{
+    display: none;
+}
+
+.price-box ul{
+    list-style-type: none;
+    border-top: 1px solid rgb(161, 156, 151);
+    padding: 0;
+}
+
+.price-box ul li{
+    border-bottom: 1px solid rgb(161, 156, 151);
+    padding: 15px 0;
+    font-size: 17px;
+    
+}
+
+.price-box button{
+    background-color: rgb(151, 101, 203);
+    color: #fff;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Manuale', serif;
+    padding: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.price-box.price-box-premium{
+    background-color: rgb(146, 100, 195);
+    transform: scale(1.1);
+    color: white;
+}
+
+.price-box.price-box-premium p{
+    color: rgb(255, 255, 255);
+}
+
+.price-box.price-box-premium button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(153, 104, 199);
+}
+
+.price-box.price-box-premium ul,
+.price-box.price-box-premium ul li{
+    border-color: #fff;
+}
+
+.toggle-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-container label{
+  background-color: rgb(175, 138, 209);
+  border-radius: 50px;
+  margin: 0 10px;
+  cursor: pointer;
+  height: 30px;
+  width: 60px;
+  display: inline-block;
+  position: relative;
+}
+.toggle-container label .ball{
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 50px;
+  top: 2.5px;
+  left: 2.5px;
+  transition: transform 0.4s ease;
+}
+
+.toggle-container input{
+  position: absolute;
+  left: -9999px;
+}
+
+.toggle-container input:checked + label .ball{
+  transform: translateX(30px);
+}
+
+@media screen and (max-width: 1250px ) {
+  .container {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width:768px){
+   .flex{
+    flex-direction: column;
+   }
+   .price-box.price-box-premium{
+    transform: scale(1);
+   }
+   .container{
+    padding: 0;
+   }
+}
