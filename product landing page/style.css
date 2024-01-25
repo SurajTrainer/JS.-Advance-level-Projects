@@ -1,0 +1,214 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Grape+Nuts&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    background: linear-gradient(90deg, rgb(186, 189, 132) 50%, rgb(26, 74, 24) 50%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    background-color: white;
+    width: 90%;
+    height: 90vh;
+}
+
+.navbar .logo{
+    width: 60px;
+    height: 60px;
+    /* background-color: rgb(202, 45, 216); */
+    border: 3px solid green;
+    border-radius: 50%;
+    border-right-color: transparent;
+    position: relative;
+}
+
+.navbar .logo::before{
+    content: 'Surya..';
+    color: black;
+    font-size: 33px;
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Grape Nuts', cursive; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10% , -50%);
+}
+.navbar{
+    width: 90%;
+    margin: auto;
+    height: 12vh;
+
+}
+.navbar , .navlist{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navlist li{
+    list-style: none;
+    padding: 18px;
+}
+.navlist a{
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 700;
+    color: black;
+    position: relative;
+}
+.navlist a::before{
+    content: '';
+    width: 0;
+    height: 2px;
+    bottom: -10px;
+    left: 0px;
+    background-color: black;    
+    position: absolute;
+    transition: .5s ease-in-out;
+}
+.navlist a:hover::before{
+    width: 100%;
+}
+.hero{
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero img{
+    width: 48vw;
+    padding: 90px 150px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+    padding: 50px 50px;
+    border-left: 4px solid rgb(16, 76, 16);
+}
+.content h3{
+    color: rgb(36, 82, 84);
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+.content h1{
+    color: rgb(5, 61, 5);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: 2px;
+}
+.content p{
+    font-size: 24px;
+    line-height: 40px;
+    padding-right: 50px;
+
+}
+.content button{
+    padding: 15px 15px;
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(31, 117, 31);
+    border: none;
+    border-radius: 2px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.content button:hover{
+    background-color: white;
+    color: green;
+}
+
+.hamburger{
+    display: none;
+}
+.hamburger span{
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin: 5px;
+}
+.hamburger span:nth-child(2){
+    width: 25px;
+}
+.hamburger span:nth-child(3){
+    width: 35px;
+}
+
+
+@media screen and (max-width: 1360px){
+    .content h1{
+        font-size: 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .content{
+        padding: 12px 12px;
+    }
+    .content h3,
+    .content h1{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .hero img{
+        width: 40vw;
+        padding: 2px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .wrapper{
+        position: relative;
+        overflow: hidden;
+    }
+    .navlist{
+        position: absolute;
+        flex-direction: column;
+        right: -70%;
+        top: 0;
+        background-color: rgb(230, 230, 144);
+        width: 300px;
+        height: 100%;
+        justify-content: center;
+        transition: .5s ease-in-out;
+    }
+    .hamburger{
+        display: block;
+        z-index: 5;
+    }
+    
+    .navlist-active{
+        right: 0;
+    }
+        .hero{
+            display: flex;
+            flex-direction: column;
+        }
+        .hero img{
+            margin-bottom: 20px;
+        }
+        .content{
+            border-left: 0px;
+            border-top: 4px solid rgb(14, 77, 14);
+            width: 60%;
+        }
+}
