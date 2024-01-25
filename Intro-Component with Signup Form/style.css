@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.error-img,
+.error-text{
+    display: none;
+}
+
+.field-group.error .error-text,
+.field-group.error .error-img{
+        display: block;
+}
+
+.field-group.error input{
+    border: 2px solid rgb(226, 26, 26);
+}
+
+html{
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px;
+    background-color: rgb(221, 99, 99);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+.left-col{
+    flex: 1;
+}
+.left-col h1{
+    color: white;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 20px;
+}
+
+.left-col p{
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    margin-bottom: 20px;
+}
+.right-col{
+    flex: 1;
+}
+
+.right-col .top-box{
+    font-size: 1.3rem;
+    color: white;
+    background-color: rgb(214, 42, 214);
+    padding: 16px 0px;
+    margin-bottom: 20px;
+    box-shadow: 2px 1px 10px 4px rgb(230, 69, 230);
+    border-radius: 13px;
+}
+
+
+.right-col .top-box p{
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+
+.right-col .top-box p span{
+    font-size: 1.7rem;
+    font-weight: 700;
+
+}
+
+.form-container{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px 30px;
+}
+.field-group{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.right-col label{
+    display: none;
+}
+
+.right-col input,
+.right-col button[type = submit]{
+    width: 100%;
+    height: 20px;
+    padding: 28px;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    font-weight: 500;
+    border: 1.2px solid rgb(247, 86, 86);
+    outline: none;
+    color: rgb(44, 44, 226);
+    box-shadow: 1px 2px 5px 1px rgb(79, 79, 190);
+}
+.right-col input::placeholder{
+    font-size: 1.4rem;
+    color: rgb(75, 72, 72);
+    font-weight: 500;
+
+}
+
+.right-col input:focus{
+    border: 1.2px solid black;
+}
+.right-col button[type = submit]{
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 30px;
+    background-color: rgb(32, 221, 32);
+    color: white;
+    box-shadow: 2px 2px 12px 10px rgb(67, 199, 67);
+    margin-bottom: 0px;
+}
+
+.right-col button[type = submit]:hover{
+    background-color: rgb(79, 240, 79);
+}
+
+.right-col .form-footer{
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: cadetblue
+}
+
+.right-col .form-footer span{
+    color: rgb(204, 45, 45);
+}
+
+.error-img{
+    /* display: block; */
+    top: 20%;
+    right: 20px;
+    position: absolute;
+}
+.error-text{
+    /* display: block; */
+    text-align: right;
+    color: red;
+    font-size: 1.4rem
+}
+
+
+
+@media  screen and (min-width: 1000px) {
+    .intro{
+        background-color: rgb(139, 241, 134);
+    }
+    .container{
+        flex-direction: row;
+    }
+    .left-col {
+        text-align: left;
+        padding-right: 50px;
+    }
+    .left-col h1{
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+    .left-col pP{
+        font-size: 1.4rem;
+    }
+    .right-col {
+        max-width: 500px;
+    }
+}

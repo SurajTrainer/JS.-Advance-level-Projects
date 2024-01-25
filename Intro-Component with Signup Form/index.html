@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Intro-Component with Signup Form</title>
+</head>
+
+<body>
+    <section class="intro">
+        <div class="container">
+            <div class="left-col">
+                <h1>learn the code by watching others</h1>
+                <p>you can see that who experience developer solved the problems easily.. watching scripted tutorials is
+                    great
+                    but how developers thinks is important in real times..
+                </p>
+            </div>
+            <div class="right-col">
+                <div class="top-box">
+                    <p><span>try it free 7 days </span>
+                        then $20/mo. thereafter...</p>
+                </div>
+                <form class="form-container" action="">
+                    <div class="field-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                        <img src="error-icon.svg" class="error-img" alt="error-icon">
+                        <p class="error-text">First Name cannot be empty..</p>
+                    </div>
+                    <div class="field-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                        <img src="error-icon.svg" class="error-img" alt="error-icon">
+                        <p class="error-text">Last Name cannot be empty..</p>
+                    </div>
+                    <div class="field-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Email">
+                        <img src="error-icon.svg" class="error-img" alt="error-icon">
+                        <p class="error-text">look like this is not..</p>
+                    </div>
+                    <div class="field-group">
+                        <label for="password">Password</label>
+                        <input type="text" id="password" name="password" placeholder="Password">
+                        <img src="error-icon.svg" class="error-img" alt="error-icon">
+                        <p class="error-text">password cannot be empty..</p>
+                    </div>
+                    <button type="submit">Claim your free trial</button>
+                    <p class="form-footer">By Clicking the button, you are agreeing to our <span>Term and
+                            Services</span>..</p>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="attribution">
+
+            challenged by <a href="#">Frontend mentor </a> Coded bY <a href="#">Suraj Singh</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
