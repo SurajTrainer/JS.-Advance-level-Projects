@@ -1,0 +1,16 @@
+
+.m-auto{
+    margin: auto;
+}
+
+.m-top{
+    margin-top: 10px;
+}
+.m-b{
+    margin-bottom: 10px;
+}
+.m-all{
+    /* margin-top: 20px; */
+    margin-left: 5%;
+    margin-right: 5%;
+}
